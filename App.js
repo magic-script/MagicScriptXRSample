@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'magic-script-components';
+import AnchorCube from './anchor-cube.js';
 
 import { authorize } from 'react-native-app-auth';
 import { NativeModules } from 'react-native';
@@ -118,7 +119,8 @@ class MyApp extends React.Component {
       <View name='main-view'>
         { scenes.length === 0
           ? (<Text text='Initializing ...' />)
-          : scenes.map( scene => <Text key={scene.uuid} anchorUuid={scene.uuid} textSize={0.1} textColor={[1, 0, 0, 1]} text={scene.pcfId} />)
+          // : scenes.map( scene => <Text key={scene.uuid} anchorUuid={scene.uuid} textSize={0.1} textColor={[1, 0, 0, 1]} text={scene.pcfId} />)
+          : scenes.map( scene => <AnchorCube key={scene.uuid} uuid={scene.uuid} id={scene.pcfId} />)
         }
       </View>
     );
