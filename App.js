@@ -5,6 +5,8 @@ import AnchorCube from './anchor-cube.js';
 import { authorize } from 'react-native-app-auth';
 import { NativeModules } from 'react-native';
 
+import mockPcfList from './mockPcfList.js';
+
 const { XrApp, XrClientBridge } = NativeModules;
 
 const oAuthConfig = {
@@ -20,6 +22,22 @@ const oAuthConfig = {
   serviceConfiguration: {
     authorizationEndpoint: 'https://oauth.magicleap.com/auth',
     tokenEndpoint: 'https://oauth.magicleap.com/token'
+  }
+};
+
+const oAuthConfigStaging = {
+  cacheKey: 'auth/staging',
+  issuer: 'https://auth.magicleap.io',
+  clientId: 'com.magicleap.mobile.magicscript',
+  redirectUrl: 'magicscript://code-callback',
+  scopes: [
+    'openid',
+    'profile',
+    'email'
+  ],
+  serviceConfiguration: {
+    authorizationEndpoint: 'https://oauth.magicleap.io/auth',
+    tokenEndpoint: 'https://oauth.magicleap.io/token'
   }
 };
 
@@ -75,13 +93,15 @@ class MyApp extends React.Component {
   }
 
   async updateAnchors () {
-    const status = await XrClientBridge.getLocalizationStatus();
+    const mock = false
+
+    const status = mock ? 'localized' : await XrClientBridge.getLocalizationStatus();
     console.log('MyXrDemoApp: localization status', status);
 
     XrApp.setStatusMessage(status);
 
     if (status === 'localized' && this.state.anchorCount === 0) {
-      const pcfList = await XrClientBridge.getAllPCFs();
+      const pcfList = mock ? mockPcfList : await XrClientBridge.getAllPCFs();
       console.log(`MyXrDemoApp: received ${pcfList.length} PCFs`);
 
       if (pcfList.length > 0) {
@@ -92,12 +112,12 @@ class MyApp extends React.Component {
 
       pcfList.forEach(pcfData => this.updateScenes(scenes, pcfData));
 
-      this.setState({ scenes: scenes, anchorCount: pcfList.length });
-
       Object.values(scenes).forEach(scene => {
         // console.log(`PCF Id: ${scene.pcfId}, Pose:`, scene.pcfPose);
         XrClientBridge.createAnchor(scene.uuid, scene.pcfPose);
       });
+
+      this.setState({ scenes: scenes, anchorCount: pcfList.length });
     }
   }
 
