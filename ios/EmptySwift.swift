@@ -1,9 +1,9 @@
 //
 //  EmptySwift.swift
-//  MyXrJamApp
+//  MagicScriptXRSample
 //
-//  Created by Nikolay Grozdanov on 11/16/19.
-//  Copyright © 2019 Facebook. All rights reserved.
+//  Created by Tony Cuadra on 1/16/20.
+//  Copyright © 2020 Facebook. All rights reserved.
 //
 
 import Foundation

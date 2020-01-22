@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112035C923D1562D00DF9DB7 /* EmptySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112035C823D1562D00DF9DB7 /* EmptySwift.swift */; };
+		112035D323D1648F00DF9DB7 /* MLXR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112035CA23D1568C00DF9DB7 /* MLXR.framework */; };
+		112035D423D1648F00DF9DB7 /* MLXR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112035CA23D1568C00DF9DB7 /* MLXR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11714A0F23D2370800410727 /* XrApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 11714A0D23D2370800410727 /* XrApp.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		DDF94AF72380946C00E5F384 /* EmptySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF94AF62380946C00E5F384 /* EmptySwift.swift */; };
-		DDF94AF92380950D00E5F384 /* MLXR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF94AF82380950D00E5F384 /* MLXR.framework */; };
-		DDF94AFA2380950D00E5F384 /* MLXR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDF94AF82380950D00E5F384 /* MLXR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DDF94AFE238096D100E5F384 /* XrApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF94AFD238096D100E5F384 /* XrApp.m */; };
-		E19323E5C14478B8D2189E1D /* libPods-MyXrJamApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DE0AAA0B69242AF7E42CB5 /* libPods-MyXrJamApp.a */; };
+		1880B3A71147BA06D68978C6 /* libPods-MagicScriptXRSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 739231C3E642B4EF9A7A85D6 /* libPods-MagicScriptXRSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DDF94AFB2380950D00E5F384 /* Embed Frameworks */ = {
+		112035D523D1648F00DF9DB7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DDF94AFA2380950D00E5F384 /* MLXR.framework in Embed Frameworks */,
+				112035D423D1648F00DF9DB7 /* MLXR.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,33 +35,35 @@
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MyXrJamAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyXrJamAppTests.m; sourceTree = "<group>"; };
-		0864E0475D5929CDF324D693 /* Pods-MyXrJamApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp-tvOS/Pods-MyXrJamApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* MyXrJamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyXrJamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MyXrJamApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MyXrJamApp/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MagicScriptXRSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicScriptXRSampleTests.m; sourceTree = "<group>"; };
+		099B77D0F305DA319ACFF294 /* Pods-MagicScriptXRSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample-tvOS/Pods-MagicScriptXRSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		112035C723D1562C00DF9DB7 /* MagicScriptXRSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicScriptXRSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		112035C823D1562D00DF9DB7 /* EmptySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySwift.swift; sourceTree = "<group>"; };
+		112035CA23D1568C00DF9DB7 /* MLXR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLXR.framework; path = ../MLXR/MLXR.framework; sourceTree = "<group>"; };
+		112035CE23D1647100DF9DB7 /* MLXR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MLXR; path = ../MLXR; sourceTree = "<group>"; };
+		112035CF23D1648000DF9DB7 /* MLXR */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = MLXR; path = ../MLXR/MLXR.framework/MLXR; sourceTree = "<group>"; };
+		11714A0D23D2370800410727 /* XrApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XrApp.m; sourceTree = "<group>"; };
+		11714A0E23D2370800410727 /* XrApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XrApp.h; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MagicScriptXRSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScriptXRSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MagicScriptXRSample/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MagicScriptXRSample/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyXrJamApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyXrJamApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MyXrJamApp/main.m; sourceTree = "<group>"; };
-		290071050328D57E57C2A20F /* libPods-MyXrJamApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyXrJamApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		31DE0AAA0B69242AF7E42CB5 /* libPods-MyXrJamApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyXrJamApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		544242C9C96D48410138C439 /* Pods-MyXrJamAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyXrJamAppTests/Pods-MyXrJamAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7287CF118183D0B0605040CE /* libPods-MyXrJamAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyXrJamAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0361BE0266FAE11500522C5 /* libPods-MyXrJamApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyXrJamApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACB82BA750CEC7E590B0ACAD /* Pods-MyXrJamApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp-tvOS/Pods-MyXrJamApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		B78FCA970D5EB3E362B83CFB /* Pods-MyXrJamAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamAppTests.release.xcconfig"; path = "Target Support Files/Pods-MyXrJamAppTests/Pods-MyXrJamAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		BC0DAC2C3BE289110D5CB666 /* Pods-MyXrJamApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp-tvOSTests/Pods-MyXrJamApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE9474422D107B97BA7233DD /* Pods-MyXrJamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp.release.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp/Pods-MyXrJamApp.release.xcconfig"; sourceTree = "<group>"; };
-		BF9209BE2B2E05B36E6A11FE /* Pods-MyXrJamApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp-tvOSTests/Pods-MyXrJamApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		DDF94AF52380946B00E5F384 /* MyXrJamApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyXrJamApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		DDF94AF62380946C00E5F384 /* EmptySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySwift.swift; sourceTree = "<group>"; };
-		DDF94AF82380950D00E5F384 /* MLXR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLXR.framework; path = ../MLXR/MLXR.framework; sourceTree = "<group>"; };
-		DDF94AFC238096AE00E5F384 /* XrApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XrApp.h; sourceTree = "<group>"; };
-		DDF94AFD238096D100E5F384 /* XrApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XrApp.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MagicScriptXRSample/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MagicScriptXRSample/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MagicScriptXRSample/main.m; sourceTree = "<group>"; };
+		22131AF7D2004CD82BCF23F7 /* Pods-MagicScriptXRSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample-tvOSTests/Pods-MagicScriptXRSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		674D0C170196E9A74EAE8D72 /* libPods-MagicScriptXRSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicScriptXRSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5CC3948877D577479DA256 /* Pods-MagicScriptXRSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample-tvOSTests/Pods-MagicScriptXRSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		739231C3E642B4EF9A7A85D6 /* libPods-MagicScriptXRSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicScriptXRSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8499F31EAFEB08647C4A7815 /* libPods-MagicScriptXRSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicScriptXRSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA182A18F433B54C40DFB2D /* Pods-MagicScriptXRSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSampleTests.release.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSampleTests/Pods-MagicScriptXRSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A06EC959B8640F5683B1864D /* libPods-MagicScriptXRSample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicScriptXRSample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE34EB3EFD3F3A3A7B1789A /* Pods-MagicScriptXRSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample-tvOS/Pods-MagicScriptXRSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E28ADFB882979A40916DE382 /* Pods-MagicScriptXRSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample.release.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample/Pods-MagicScriptXRSample.release.xcconfig"; sourceTree = "<group>"; };
+		E57DB0BEC375E2CB6E61F4B6 /* Pods-MagicScriptXRSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample.debug.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSample/Pods-MagicScriptXRSample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FCA4B22CDCF6F27556260FF2 /* Pods-MyXrJamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyXrJamApp.debug.xcconfig"; path = "Target Support Files/Pods-MyXrJamApp/Pods-MyXrJamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F785BC581ABCC6F87FFC8727 /* Pods-MagicScriptXRSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-MagicScriptXRSampleTests/Pods-MagicScriptXRSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,21 +71,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19323E5C14478B8D2189E1D /* libPods-MyXrJamApp.a in Frameworks */,
-				DDF94AF92380950D00E5F384 /* MLXR.framework in Frameworks */,
+				1880B3A71147BA06D68978C6 /* libPods-MagicScriptXRSample.a in Frameworks */,
+				112035D323D1648F00DF9DB7 /* MLXR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MyXrJamAppTests */ = {
+		00E356EF1AD99517003FC87E /* MagicScriptXRSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MyXrJamAppTests.m */,
+				00E356F21AD99517003FC87E /* MagicScriptXRSampleTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MyXrJamAppTests;
+			path = MagicScriptXRSampleTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -94,9 +96,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* MyXrJamApp */ = {
+		13B07FAE1A68108700A75B9A /* MagicScriptXRSample */ = {
 			isa = PBXGroup;
 			children = (
+				11714A0E23D2370800410727 /* XrApp.h */,
+				11714A0D23D2370800410727 /* XrApp.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -104,26 +108,39 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				DDF94AF62380946C00E5F384 /* EmptySwift.swift */,
-				DDF94AF52380946B00E5F384 /* MyXrJamApp-Bridging-Header.h */,
-				DDF94AFC238096AE00E5F384 /* XrApp.h */,
-				DDF94AFD238096D100E5F384 /* XrApp.m */,
 			);
-			name = MyXrJamApp;
+			name = MagicScriptXRSample;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDF94AF82380950D00E5F384 /* MLXR.framework */,
+				112035CE23D1647100DF9DB7 /* MLXR */,
+				112035CF23D1648000DF9DB7 /* MLXR */,
+				112035CA23D1568C00DF9DB7 /* MLXR.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				31DE0AAA0B69242AF7E42CB5 /* libPods-MyXrJamApp.a */,
-				290071050328D57E57C2A20F /* libPods-MyXrJamApp-tvOS.a */,
-				A0361BE0266FAE11500522C5 /* libPods-MyXrJamApp-tvOSTests.a */,
-				7287CF118183D0B0605040CE /* libPods-MyXrJamAppTests.a */,
+				739231C3E642B4EF9A7A85D6 /* libPods-MagicScriptXRSample.a */,
+				A06EC959B8640F5683B1864D /* libPods-MagicScriptXRSample-tvOS.a */,
+				674D0C170196E9A74EAE8D72 /* libPods-MagicScriptXRSample-tvOSTests.a */,
+				8499F31EAFEB08647C4A7815 /* libPods-MagicScriptXRSampleTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D7CA5694F609EDE219AA631 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E57DB0BEC375E2CB6E61F4B6 /* Pods-MagicScriptXRSample.debug.xcconfig */,
+				E28ADFB882979A40916DE382 /* Pods-MagicScriptXRSample.release.xcconfig */,
+				DFE34EB3EFD3F3A3A7B1789A /* Pods-MagicScriptXRSample-tvOS.debug.xcconfig */,
+				099B77D0F305DA319ACFF294 /* Pods-MagicScriptXRSample-tvOS.release.xcconfig */,
+				6B5CC3948877D577479DA256 /* Pods-MagicScriptXRSample-tvOSTests.debug.xcconfig */,
+				22131AF7D2004CD82BCF23F7 /* Pods-MagicScriptXRSample-tvOSTests.release.xcconfig */,
+				F785BC581ABCC6F87FFC8727 /* Pods-MagicScriptXRSampleTests.debug.xcconfig */,
+				9AA182A18F433B54C40DFB2D /* Pods-MagicScriptXRSampleTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -136,12 +153,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* MyXrJamApp */,
+				112035C823D1562D00DF9DB7 /* EmptySwift.swift */,
+				13B07FAE1A68108700A75B9A /* MagicScriptXRSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MyXrJamAppTests */,
+				00E356EF1AD99517003FC87E /* MagicScriptXRSampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9077D48960D6289252592D32 /* Pods */,
+				4D7CA5694F609EDE219AA631 /* Pods */,
+				112035C723D1562C00DF9DB7 /* MagicScriptXRSample-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -151,49 +170,34 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MyXrJamApp.app */,
+				13B07F961A680F5B00A75B9A /* MagicScriptXRSample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9077D48960D6289252592D32 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FCA4B22CDCF6F27556260FF2 /* Pods-MyXrJamApp.debug.xcconfig */,
-				BE9474422D107B97BA7233DD /* Pods-MyXrJamApp.release.xcconfig */,
-				ACB82BA750CEC7E590B0ACAD /* Pods-MyXrJamApp-tvOS.debug.xcconfig */,
-				0864E0475D5929CDF324D693 /* Pods-MyXrJamApp-tvOS.release.xcconfig */,
-				BC0DAC2C3BE289110D5CB666 /* Pods-MyXrJamApp-tvOSTests.debug.xcconfig */,
-				BF9209BE2B2E05B36E6A11FE /* Pods-MyXrJamApp-tvOSTests.release.xcconfig */,
-				544242C9C96D48410138C439 /* Pods-MyXrJamAppTests.debug.xcconfig */,
-				B78FCA970D5EB3E362B83CFB /* Pods-MyXrJamAppTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* MyXrJamApp */ = {
+		13B07F861A680F5B00A75B9A /* MagicScriptXRSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MyXrJamApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MagicScriptXRSample" */;
 			buildPhases = (
-				4CF1CBD375CE16AB8BB809F9 /* [CP] Check Pods Manifest.lock */,
+				313E001F4C863FCD528029BD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6A76A08641D992B44E647348 /* [CP] Copy Pods Resources */,
-				DDF94AFB2380950D00E5F384 /* Embed Frameworks */,
+				B242480072849CD47EE9200B /* [CP] Copy Pods Resources */,
+				112035D523D1648F00DF9DB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyXrJamApp;
-			productName = MyXrJamApp;
-			productReference = 13B07F961A680F5B00A75B9A /* MyXrJamApp.app */;
+			name = MagicScriptXRSample;
+			productName = MagicScriptXRSample;
+			productReference = 13B07F961A680F5B00A75B9A /* MagicScriptXRSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,12 +210,12 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = Z6J3A5F4CL;
-						LastSwiftMigration = 1120;
+						DevelopmentTeam = 99VMVSSJY9;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MyXrJamApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MagicScriptXRSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MyXrJamApp */,
+				13B07F861A680F5B00A75B9A /* MagicScriptXRSample */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +261,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4CF1CBD375CE16AB8BB809F9 /* [CP] Check Pods Manifest.lock */ = {
+		313E001F4C863FCD528029BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,20 +276,20 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyXrJamApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MagicScriptXRSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6A76A08641D992B44E647348 /* [CP] Copy Pods Resources */ = {
+		B242480072849CD47EE9200B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyXrJamApp/Pods-MyXrJamApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MagicScriptXRSample/Pods-MagicScriptXRSample-resources.sh",
 				"${PODS_ROOT}/GLTFSceneKit/Source/Common/GLTFShaderModifierFragment_alphaCutoff.shader",
 				"${PODS_ROOT}/GLTFSceneKit/Source/Common/GLTFShaderModifierSurface.shader",
 				"${PODS_ROOT}/GLTFSceneKit/Source/Common/GLTFShaderModifierSurface_alphaModeBlend.shader",
@@ -308,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyXrJamApp/Pods-MyXrJamApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MagicScriptXRSample/Pods-MagicScriptXRSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -337,8 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF94AF72380946C00E5F384 /* EmptySwift.swift in Sources */,
-				DDF94AFE238096D100E5F384 /* XrApp.m in Sources */,
+				112035C923D1562D00DF9DB7 /* EmptySwift.swift in Sources */,
+				11714A0F23D2370800410727 /* XrApp.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -353,7 +357,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = MyXrJamApp;
+			path = MagicScriptXRSample;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,14 +365,14 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA4B22CDCF6F27556260FF2 /* Pods-MyXrJamApp.debug.xcconfig */;
+			baseConfigurationReference = E57DB0BEC375E2CB6E61F4B6 /* Pods-MagicScriptXRSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = Z6J3A5F4CL;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../MLXR";
+				DEVELOPMENT_TEAM = 99VMVSSJY9;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../MLXR\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -393,9 +397,9 @@
 					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
-					"$(SRCROOT)/../MLXR",
+					"\"$(SRCROOT)/../MLXR\"",
 				);
-				INFOPLIST_FILE = MyXrJamApp/Info.plist;
+				INFOPLIST_FILE = MagicScriptXRSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -403,8 +407,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MyXrJamApp;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyXrJamApp-Bridging-Header.h";
+				PRODUCT_NAME = MagicScriptXRSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicScriptXRSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -413,13 +417,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE9474422D107B97BA7233DD /* Pods-MyXrJamApp.release.xcconfig */;
+			baseConfigurationReference = E28ADFB882979A40916DE382 /* Pods-MagicScriptXRSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z6J3A5F4CL;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../MLXR";
+				DEVELOPMENT_TEAM = 99VMVSSJY9;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../MLXR\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -444,9 +448,9 @@
 					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
-					"$(SRCROOT)/../MLXR",
+					"\"$(SRCROOT)/../MLXR\"",
 				);
-				INFOPLIST_FILE = MyXrJamApp/Info.plist;
+				INFOPLIST_FILE = MagicScriptXRSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -454,8 +458,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MyXrJamApp;
-				SWIFT_OBJC_BRIDGING_HEADER = "MyXrJamApp-Bridging-Header.h";
+				PRODUCT_NAME = MagicScriptXRSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicScriptXRSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -563,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MyXrJamApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MagicScriptXRSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -572,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MyXrJamApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MagicScriptXRSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

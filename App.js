@@ -5,8 +5,6 @@ import AnchorCube from './anchor-cube.js';
 import { authorize } from 'react-native-app-auth';
 import { NativeModules } from 'react-native';
 
-import mockPcfList from './mockPcfList.js';
-
 const { XrApp, XrClientBridge } = NativeModules;
 
 const oAuthConfig = {
@@ -22,22 +20,6 @@ const oAuthConfig = {
   serviceConfiguration: {
     authorizationEndpoint: 'https://oauth.magicleap.com/auth',
     tokenEndpoint: 'https://oauth.magicleap.com/token'
-  }
-};
-
-const oAuthConfigStaging = {
-  cacheKey: 'auth/staging',
-  issuer: 'https://auth.magicleap.io',
-  clientId: 'com.magicleap.mobile.magicscript',
-  redirectUrl: 'magicscript://code-callback',
-  scopes: [
-    'openid',
-    'profile',
-    'email'
-  ],
-  serviceConfiguration: {
-    authorizationEndpoint: 'https://oauth.magicleap.io/auth',
-    tokenEndpoint: 'https://oauth.magicleap.io/token'
   }
 };
 
@@ -93,15 +75,11 @@ class MyApp extends React.Component {
   }
 
   async updateAnchors () {
-    const mock = false
-
-    const status = mock ? 'localized' : await XrClientBridge.getLocalizationStatus();
+    const status = await XrClientBridge.getLocalizationStatus();
     console.log('MyXrDemoApp: localization status', status);
 
-    XrApp.setStatusMessage(status);
-
     if (status === 'localized' && this.state.anchorCount === 0) {
-      const pcfList = mock ? mockPcfList : await XrClientBridge.getAllPCFs();
+      const pcfList = await XrClientBridge.getAllPCFs();
       console.log(`MyXrDemoApp: received ${pcfList.length} PCFs`);
 
       if (pcfList.length > 0) {
@@ -113,7 +91,6 @@ class MyApp extends React.Component {
       pcfList.forEach(pcfData => this.updateScenes(scenes, pcfData));
 
       Object.values(scenes).forEach(scene => {
-        // console.log(`PCF Id: ${scene.pcfId}, Pose:`, scene.pcfPose);
         XrClientBridge.createAnchor(scene.uuid, scene.pcfPose);
       });
 
@@ -139,7 +116,6 @@ class MyApp extends React.Component {
       <View name='main-view'>
         { scenes.length === 0
           ? (<Text text='Initializing ...' />)
-          // : scenes.map( scene => <Text key={scene.uuid} anchorUuid={scene.uuid} textSize={0.1} textColor={[1, 0, 0, 1]} text={scene.pcfId} />)
           : scenes.map( scene => <AnchorCube key={scene.uuid} uuid={scene.uuid} id={scene.pcfId} />)
         }
       </View>

@@ -1,5 +1,5 @@
 {
-  "name": "MyXrJamApp",
+  "name": "MagicScriptXRSample",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.4",
-    "magic-script-components": "2.0.1",
+    "react-native": "0.61.5",
+    "magic-script-components": "^2.0.2",
     "magic-script-components-react-native": "^1.0.2",
     "react-native-xr-client": "0.0.6",
     "react-native-app-auth": "^4.4.0"

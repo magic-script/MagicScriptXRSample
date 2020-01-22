@@ -1,4 +1,4 @@
-package com.myxrjamapp
+package com.magicscriptxrsample
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -18,7 +18,7 @@ class MainActivity : ReactActivity() {
      * rendering of the component.
      */
     override fun getMainComponentName(): String? {
-        return "MyXrJamApp"
+        return "MagicScriptXRSample"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
