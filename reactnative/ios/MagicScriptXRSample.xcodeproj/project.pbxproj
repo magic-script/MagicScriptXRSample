@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11C2C30C23E62C4D00CE487F /* MLXR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C2C30B23E62C4D00CE487F /* MLXR.framework */; };
 		11C2C30D23E62C4D00CE487F /* MLXR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C2C30B23E62C4D00CE487F /* MLXR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11C2C31123E6655C00CE487F /* XrApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C2C31023E6655C00CE487F /* XrApp.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -38,8 +37,6 @@
 		00E356F21AD99517003FC87E /* MagicScriptXRSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicScriptXRSampleTests.m; sourceTree = "<group>"; };
 		0A897FF15313113BFBDEDA42 /* Pods-MagicScriptXRSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicScriptXRSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicScriptXRSample/Pods-MagicScriptXRSample.release.xcconfig"; sourceTree = "<group>"; };
 		11C2C30B23E62C4D00CE487F /* MLXR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLXR.framework; path = ../../MLXR/MLXR.framework; sourceTree = "<group>"; };
-		11C2C30F23E6653800CE487F /* XrApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XrApp.h; sourceTree = "<group>"; };
-		11C2C31023E6655C00CE487F /* XrApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XrApp.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* MagicScriptXRSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicScriptXRSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MagicScriptXRSample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MagicScriptXRSample/AppDelegate.m; sourceTree = "<group>"; };
@@ -100,8 +97,6 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				C41FCE0A230C192800F4A04F /* Empty.swift */,
 				C41FCE09230C192700F4A04F /* MagicScriptXRSample-Bridging-Header.h */,
-				11C2C30F23E6653800CE487F /* XrApp.h */,
-				11C2C31023E6655C00CE487F /* XrApp.m */,
 			);
 			name = MagicScriptXRSample;
 			sourceTree = "<group>";
@@ -194,7 +189,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 99VMVSSJY9;
+						DevelopmentTeam = Z6J3A5F4CL;
 						LastSwiftMigration = 1030;
 					};
 				};
@@ -326,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				11C2C31123E6655C00CE487F /* XrApp.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				C41FCE0B230C192800F4A04F /* Empty.swift in Sources */,
 			);
@@ -355,7 +349,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 99VMVSSJY9;
+				DEVELOPMENT_TEAM = Z6J3A5F4CL;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../MLXR\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +385,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magicscript.xrsample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicleap.mxs.xrsample;
 				PRODUCT_NAME = MagicScriptXRSample;
 				SWIFT_OBJC_BRIDGING_HEADER = "MagicScriptXRSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -407,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 99VMVSSJY9;
+				DEVELOPMENT_TEAM = Z6J3A5F4CL;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../MLXR\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +437,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magicscript.xrsample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicleap.mxs.xrsample;
 				PRODUCT_NAME = MagicScriptXRSample;
 				SWIFT_OBJC_BRIDGING_HEADER = "MagicScriptXRSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

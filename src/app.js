@@ -5,8 +5,6 @@ import AnchorCube from './anchor-cube.js';
 import { authorize } from 'react-native-app-auth';
 import { NativeModules } from 'react-native';
 
-import shareSession from './share-session';
-
 const { XrClientBridge } = NativeModules;
 
 const oAuthConfig = {
@@ -25,7 +23,6 @@ const oAuthConfig = {
   }
 };
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const getUUID = (id, pose) => `${id}#[${pose}]`;
 
 class MyApp extends React.Component {
@@ -39,13 +36,7 @@ class MyApp extends React.Component {
   }
 
   async componentDidMount () {
-    await sleep(1000);
-    await shareSession();
-
-    await sleep(1000);
     const oauth = await this.authorizeToXrServer(oAuthConfig);
-
-    await sleep(1000);
     const status = await this.connectToXrServer(oauth);
 
     this._updateInterval = setInterval(() => this.updateAnchors(), 1000);
