@@ -5,7 +5,9 @@ import AnchorCube from './anchor-cube.js';
 import { authorize } from 'react-native-app-auth';
 import { NativeModules } from 'react-native';
 
-const { XrApp, XrClientBridge } = NativeModules;
+import shareSession from './share-session';
+
+const { XrClientBridge } = NativeModules;
 
 const oAuthConfig = {
   cacheKey: 'auth/prod',
@@ -36,22 +38,17 @@ class MyApp extends React.Component {
     };
   }
 
-  componentDidMount () {
-    setTimeout(async () => {
-      console.log('MyXrDemoApp: sharing ARSession');
-      await XrApp.shareSession();
+  async componentDidMount () {
+    await sleep(1000);
+    await shareSession();
 
-      await sleep(1000);
+    await sleep(1000);
+    const oauth = await this.authorizeToXrServer(oAuthConfig);
 
-      const oauth = await this.authorizeToXrServer(oAuthConfig);
+    await sleep(1000);
+    const status = await this.connectToXrServer(oauth);
 
-      await sleep(1000);
-
-      const status = await this.connectToXrServer(oauth);
-
-      this._updateInterval = setInterval(() => this.updateAnchors(), 1000);
-
-    }, 1000);
+    this._updateInterval = setInterval(() => this.updateAnchors(), 1000);
   }
 
   componentWillUnmount () {
