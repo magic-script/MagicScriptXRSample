@@ -62,18 +62,28 @@ typedef enum {
 
 /// Manages the client session for shared experience in the real world.
 @interface MLXRSession : NSObject
-/// Default @c init is disabled.
-- (instancetype)init NS_UNAVAILABLE;
+/// Initializes the client session.
+/// Call the @c start function to start the session.
+- (instancetype)init;
 
 /// Initializes and starts the client session.
+///
+/// - Warning:
+/// Deprecated. Use the default constructor followed by the @c start function.
 ///
 /// @param token Authentication token.
 /// @param session ARSession object acquired from ARKit.
 ///
 /// @return The client session instance, or @c nil if the parameters are not valid.
-- (instancetype)initWith:(NSString *)token :(ARSession *)session;
+- (instancetype)initWith:(NSString *)token :(ARSession *)session __attribute__((deprecated));
 
-/// Stops the client session. Re-instantiate the MLXRSession object to re-start the session.
+/// Starts the client session.
+///
+/// @param token Authentication token.
+/// @return @c true if successfully started, or already started, @c false otherwise.
+- (BOOL)start:(NSString *)token;
+
+/// Stops the client session. Call the @c start function to re-start the session.
 - (void)stop;
 
 /// Gets the client session status.
@@ -105,6 +115,15 @@ typedef enum {
 ///
 /// @return An array of anchors found in the scene.
 - (NSArray<MLXRAnchor *> *)getAllAnchors;
+
+/// Gets an anchor by ID.
+///
+/// @sa @c MLXRAnchor for the properties of the anchor.
+///
+/// @param anchorId ID of the anchor.
+///
+/// @return An anchor with the given ID, or @c nil if not found.
+- (MLXRAnchor * _Nullable)getAnchorById:(NSUUID *)anchorId NS_SWIFT_NAME(getAnchor(anchorId:));
 
 /// Gets the localization result.
 ///
