@@ -19,6 +19,6 @@
     "react": "16.8.3",
     "react-native": "0.60.5",
     "react-native-app-auth": "^4.4.0",
-    "react-native-xr-client": "0.0.7"
+    "react-native-xr-client": "0.0.9"
   }
 }
