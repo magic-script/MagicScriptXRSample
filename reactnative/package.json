@@ -14,7 +14,7 @@
     "magic-script-typings": "1.4.0"
   },
   "dependencies": {
-    "magic-script-components-react-native": "1.0.1",
+    "magic-script-components-react-native": "1.0.4",
     "magic-script-polyfills": "2.4.2",
     "react": "16.8.3",
     "react-native": "0.60.5",
