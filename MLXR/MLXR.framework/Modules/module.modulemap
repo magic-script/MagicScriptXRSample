@@ -1,6 +1,0 @@
-framework module MLXR {
-  umbrella header "MLXR.h"
-
-  export *
-  module * { export * }
-}
