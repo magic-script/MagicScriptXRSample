@@ -9,7 +9,11 @@ the magic-script CLI), see https://github.com/magic-script/react-native-xr-clien
 
 1. Make sure you have the [`magic-script-cli`](https://github.com/magic-script/magic-script-cli) installed and you follow the steps in `magic-script-cli` documentation to properly setup your environment for either `iOS` or `Android` (depending on which platform you want to build the project for)
 
-2. To build & run the project, execute below commands in root directory of the project:
+2. Download the XR SDK for Android and/or iOS and drop the libraries in the MLXR folder
+     - For Android, it should be a file named `XRKit.aar`.
+     - For iOS, it should be a folder named `MLXR.framework`.
+
+3. To build & run the project, execute below commands in root directory of the project:
 
      - For Android, type `magic-script build android`
      - For iOS, type `magic-script build iOS`
