@@ -9,16 +9,14 @@ const length = 0.25;
 
 // props:
 // - id
-// - uuid
 
 export default function (props) {
-  const uuid = props.uuid;
   const vecX = [vecStart, [length, 0, 0]];
   const vecY = [vecStart, [0, length, 0]];
   const vecZ = [vecStart, [0, 0, length]];
 
   return (
-    <View anchorUuid={uuid}>
+    <View anchorUuid={props.id}>
       <Line points={vecX} color={red} />
       <Line points={vecY} color={green} />
       <Line points={vecZ} color={blue} />
