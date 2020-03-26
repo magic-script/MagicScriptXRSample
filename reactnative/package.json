@@ -14,11 +14,12 @@
     "magic-script-typings": "1.4.0"
   },
   "dependencies": {
-    "magic-script-components-react-native": "1.0.4",
+    "magic-script-components": "git+https://github.com/magic-script/magic-script-components.git#XrClient",
+    "magic-script-components-react-native": "git+https://github.com/magic-script/magic-script-components-react-native.git",
     "magic-script-polyfills": "2.4.2",
     "react": "16.8.3",
     "react-native": "0.60.5",
     "react-native-app-auth": "^4.4.0",
-    "react-native-xr-client": "0.0.9"
+    "react-native-xr-client": "git+https://github.com/magic-script/react-native-xr-client.git#XrClient"
   }
 }

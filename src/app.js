@@ -2,7 +2,6 @@ import React from 'react';
 import { Prism, Scene, Text } from 'magic-script-components';
 import AnchorCube from './anchor-cube.js';
 
-import { authorize } from 'react-native-app-auth';
 import { XrClientProvider } from 'magic-script-components';
 
 const xrClient = XrClientProvider.getXrClient();
@@ -32,8 +31,13 @@ export default class MyApp extends React.Component {
   }
 
   async componentDidMount () {
-    const oAuthResult = await authorize(oAuthConfig);
-    const status = await xrClient.connect(oAuthResult.accessToken);
+    let accessToken;
+    if (typeof XrClientProvider.authorize === 'function') {
+      const oAuthResult = await XrClientProvider.authorize(oAuthConfig);
+      accessToken = oAuthResult.accessToken;
+    }
+
+    const status = await xrClient.connect(accessToken);
     console.log(`xrClient.connect: ${status}`);
 
     this._updateInterval = setInterval(() => this.updateAnchors(), 1000);

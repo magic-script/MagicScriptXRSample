@@ -57,3 +57,12 @@ buck-out/
 
 # CocoaPods
 reactnative/ios/Pods/
+
+# magic-script
+lumin/bin/
+lumin/.out/
+lumin/digest.sha512.signed
+
+# XR SDK
+MLXR/XRKit.aar
+MLXR/MLXR.framework

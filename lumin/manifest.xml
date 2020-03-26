@@ -4,14 +4,16 @@
           ml:version_code="1">
   <application ml:visible_name="MagicScriptXRSample"
                ml:sdk_version="1.0">
-    <component ml:name=".universe"
+    <component ml:name=".fullscreen"
                ml:visible_name="MagicScriptXRSample"
                ml:binary_name="bin/index.js"
-               ml:type="Universe">
+               ml:type="Fullscreen">
       <mode ml:shareable="true"/>
       <icon ml:model_folder=""
             ml:portal_folder=""/>
     </component>
     <uses-privilege ml:name="MagicScript"/>
+    <uses-privilege ml:name="LowLatencyLightwear"/>
+    <uses-privilege ml:name="PcfRead"/>
   </application>
 </manifest>

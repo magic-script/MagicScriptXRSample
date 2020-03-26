@@ -43,7 +43,7 @@ export default [
       globals: {
         'react': 'React'
       },
-      file: '../reactnative/bin/bundle.js',
+      file: 'bin/bundle.js',
       format: 'iife',
       name: '_'
     }
