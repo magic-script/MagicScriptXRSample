@@ -87,11 +87,11 @@ PODS:
     - AppAuth (= 0.94.0)
     - React
   - RNMagicScript (0.1.0):
-    - ChromaColorPicker
-    - GLTFSceneKit
-    - GrowingTextView
-    - React
-  - RNXrClient (0.0.7):
+    - ChromaColorPicker (= 1.8.0)
+    - GLTFSceneKit (= 0.1.3)
+    - GrowingTextView (= 0.7.2)
+    - React (= 0.60.5)
+  - RNXrClient (0.0.9):
     - React
   - yoga (0.60.5.React)
 
@@ -206,8 +206,8 @@ SPEC CHECKSUMS:
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNAppAuth: eac16a338ed1117d8b7729b36de3b1a58b5e96f2
-  RNMagicScript: 310c51bc64e3bfe547adb7b19be038f116a46151
-  RNXrClient: e7585f8c6f46c43a90ced8cab0c202f22ff886cc
+  RNMagicScript: db8d5facb55414ec2d13a37744f3d052747007c8
+  RNXrClient: fc7d74309acdb21b158ad1fd8161364f7dd0faeb
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
 PODFILE CHECKSUM: a56e182f098918c9e2e79543757a4904c182acf1

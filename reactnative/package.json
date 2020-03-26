@@ -14,7 +14,6 @@
     "magic-script-typings": "1.4.0"
   },
   "dependencies": {
-    "magic-script-components": "git+https://github.com/magic-script/magic-script-components.git#XrClient",
     "magic-script-components-react-native": "git+https://github.com/magic-script/magic-script-components-react-native.git",
     "magic-script-polyfills": "2.4.2",
     "react": "16.8.3",

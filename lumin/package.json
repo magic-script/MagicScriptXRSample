@@ -24,7 +24,6 @@
     "semistandard": "^13.0.1"
   },
   "dependencies": {
-    "magic-script-components": "git+https://github.com/magic-script/magic-script-components.git#XrClient",
     "magic-script-components-lumin": "git+https://github.com/magic-script/magic-script-components-lumin.git#XrClient",
     "magic-script-polyfills": "^2.7.1"
   }
