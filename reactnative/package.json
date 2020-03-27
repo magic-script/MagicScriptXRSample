@@ -19,6 +19,6 @@
     "react": "16.8.3",
     "react-native": "0.60.5",
     "react-native-app-auth": "^4.4.0",
-    "react-native-xr-client": "git+https://github.com/magic-script/react-native-xr-client.git#XrClient"
+    "react-native-xr-client": "git+https://github.com/magic-script/react-native-xr-client.git"
   }
 }

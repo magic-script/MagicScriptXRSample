@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "magic-script-components": "git+https://github.com/magic-script/magic-script-components.git#XrClient"
+        "magic-script-components": "git+https://github.com/magic-script/magic-script-components.git"
     }
 }
