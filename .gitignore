@@ -66,3 +66,6 @@ lumin/digest.sha512.signed
 # XR SDK
 MLXR/XRKit.aar
 MLXR/MLXR.framework
+
+# Android bundle
+reactnative/android/app/src/main/assets/index.android.bundle
