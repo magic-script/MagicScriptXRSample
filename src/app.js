@@ -10,8 +10,8 @@ const { XrClientBridge } = NativeModules;
 const oAuthConfig = {
   cacheKey: 'auth/prod',
   issuer: 'https://auth.magicleap.com',
-  clientId: 'com.magicleap.mobile.magicscript',
-  redirectUrl: 'magicscript://code-callback',
+  clientId: undefined,    // Generate from https://developer.magicleap.com --> Pubish tab --> Clients tab
+  redirectUrl: undefined, // Generated along with client ID
   scopes: [
     'openid',
     'profile',
