@@ -1,12 +1,14 @@
 import React from 'react';
-import { Prism, Scene, Text } from 'magic-script-components';
+import { View, Text } from 'magic-script-components';
 import AnchorCube from './anchor-cube.js';
 
-import { XrClientProvider } from 'magic-script-components';
+import { authorize } from 'react-native-app-auth';
+import { NativeModules } from 'react-native';
 
-const xrClient = XrClientProvider.getXrClient();
+const { XrClientBridge } = NativeModules;
 
 const oAuthConfig = {
+  cacheKey: 'auth/prod',
   issuer: 'https://auth.magicleap.com',
   clientId: 'com.magicleap.mobile.magicscript',
   redirectUrl: 'magicscript://code-callback',
@@ -21,82 +23,92 @@ const oAuthConfig = {
   }
 };
 
-export default class MyApp extends React.Component {
+const getUUID = (id, pose) => `${id}#[${pose}]`;
+
+class MyApp extends React.Component {
   constructor (props) {
     super(props);
 
     this.state = {
-      pcfs: []
+      scenes: {},
+      anchorCount: 0
     };
   }
 
   async componentDidMount () {
-    let accessToken;
-    if (typeof XrClientProvider.authorize === 'function') {
-      const oAuthResult = await XrClientProvider.authorize(oAuthConfig);
-      accessToken = oAuthResult.accessToken;
-    }
-
-    const status = await xrClient.connect(accessToken);
-    console.log(`xrClient.connect: ${status}`);
+    const oauth = await this.authorizeToXrServer(oAuthConfig);
+    const status = await this.connectToXrServer(oauth);
 
     this._updateInterval = setInterval(() => this.updateAnchors(), 1000);
   }
 
   componentWillUnmount () {
-    if (this.state.pcfs.length > 0) {
-      xrClient.removeAllAnchors();
+    if (Object.keys(this.state.scenes).length > 0) {
+      XrClientBridge.removeAllAnchors();
     }
-    clearInterval(this._updateInterval);
+  }
+
+  async authorizeToXrServer (config) {
+    console.log('MyXrDemoApp: authorizing');
+    const result = await authorize(config);
+    console.log('MyXrDemoApp: oAuthData', result);
+    return result;
+  }
+
+  async connectToXrServer (config) {
+    console.log('MyXrDemoApp: XrClientBridge.connecting');
+    const result = await XrClientBridge.connect(config.accessToken);
+    console.log('MyXrDemoApp: XrClientBridge.connect result', result);
+    return result;
   }
 
   async updateAnchors () {
-    const status = await xrClient.getLocalizationStatus();
-    console.log(`localization status: ${status}`);
+    const status = await XrClientBridge.getLocalizationStatus();
+    console.log('MyXrDemoApp: localization status', status);
 
-    if (status === 'localized' && this.state.pcfs.length === 0) {
-      const pcfs = await xrClient.getAllPCFs();
-      console.log(`received ${pcfs.length} PCFs`);
+    if (status === 'localized' && this.state.anchorCount === 0) {
+      const pcfList = await XrClientBridge.getAllPCFs();
+      console.log(`MyXrDemoApp: received ${pcfList.length} PCFs`);
 
-      if (pcfs.length > 0) {
+      if (pcfList.length > 0) {
         clearInterval(this._updateInterval);
       }
 
-      pcfs.forEach(pcf => xrClient.createAnchor(pcf.anchorId, pcf.pose));
+      var scenes = {};
 
-      this.setState({ pcfs });
+      pcfList.forEach(pcfData => this.updateScenes(scenes, pcfData));
+
+      Object.values(scenes).forEach(scene => {
+        XrClientBridge.createAnchor(scene.uuid, scene.pcfPose);
+      });
+
+      this.setState({ scenes: scenes, anchorCount: pcfList.length });
+    }
+  }
+
+  updateScenes (scenes, pcfData) {
+    const uuid = getUUID(pcfData.anchorId, pcfData.pose);
+
+    if (scenes[pcfData.anchorId] === undefined) {
+      scenes[pcfData.anchorId] = {
+        uuid: uuid,
+        pcfId: pcfData.anchorId,
+        pcfPose: pcfData.pose
+      };
     }
   }
 
   render () {
-    const pcfs = this.state.pcfs;
+    const scenes = Object.values(this.state.scenes);
     return (
-      <Scene>
-        { pcfs.length === 0
-          ? (
-            <Prism
-              debug={true}
-              size={[0.5, 0.5, 0.1]}
-              positionRelativeToCamera={true}
-              orientRelativeToCamera={true}
-              position={[0, 0, -1]}
-              orientation={[0, 0, 0, 1]}
-            >
-              <Text text='Initializing ...' />
-            </Prism>
-          )
-          : pcfs.map(pcf => (
-            <Prism
-              debug={true}
-              size={[0.5, 0.5, 0.5]}
-              key={pcf.anchorId}
-              anchorUuid={pcf.anchorId}
-            >
-              <AnchorCube id={pcf.anchorId} />
-            </Prism>
-          ))
+      <View name='main-view'>
+        { scenes.length === 0
+          ? (<Text text='Initializing ...' />)
+          : scenes.map( scene => <AnchorCube key={scene.uuid} uuid={scene.uuid} id={scene.pcfId} />)
         }
-      </Scene>
+      </View>
     );
   }
 }
+
+export default MyApp;
