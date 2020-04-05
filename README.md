@@ -16,4 +16,4 @@ the magic-script CLI), see https://github.com/magic-script/react-native-xr-clien
 3. To build & run the project, execute below commands in root directory of the project:
 
      - For Android, type `magic-script build android`
-     - For iOS, type `magic-script build iOS`
+     - For iOS, type `magic-script build ios`
