@@ -91,7 +91,7 @@ PODS:
     - GLTFSceneKit
     - GrowingTextView
     - React
-  - RNXrClient (0.0.7):
+  - RNXrClient (0.0.9):
     - React
   - yoga (0.60.5.React)
 
@@ -207,9 +207,9 @@ SPEC CHECKSUMS:
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNAppAuth: eac16a338ed1117d8b7729b36de3b1a58b5e96f2
   RNMagicScript: 310c51bc64e3bfe547adb7b19be038f116a46151
-  RNXrClient: e7585f8c6f46c43a90ced8cab0c202f22ff886cc
+  RNXrClient: fc7d74309acdb21b158ad1fd8161364f7dd0faeb
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
 PODFILE CHECKSUM: a56e182f098918c9e2e79543757a4904c182acf1
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
